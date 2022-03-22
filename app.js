@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+var favicon = require('express-favicon');
 var path = require('path');
 var cors = require('cors');
 var cookieParser = require('cookie-parser');
@@ -16,6 +17,7 @@ var customerRouter = require('./routes/customers');
 var app = express();
 
 app.use(cors());
+app.use(favicon(__dirname, 'public/favicon.png'))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
