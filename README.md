@@ -1,4 +1,4 @@
-# COMPANY APPLICATION
+# MY COMPANY APPLICATION
 ## FINAL (TAKE-HOME) EXAMINATION
 ----------------------------------------------------
 
