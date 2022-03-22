@@ -17,7 +17,7 @@ var customerRouter = require('./routes/customers');
 var app = express();
 
 app.use(cors());
-app.use(favicon(__dirname, 'public/favicon.png'))
+app.use(favicon(__dirname + '/public/favicon.png'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
