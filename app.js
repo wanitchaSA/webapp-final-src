@@ -17,7 +17,6 @@ var customerRouter = require('./routes/customers');
 var app = express();
 
 app.use(cors());
-app.use(favicon(__dirname + '/public/react-quotation/logo512.png'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -33,6 +32,7 @@ app.use(express.static(path.join(__dirname, "public", "react-quotation")));
 app.get("/react-quotation/*", function (req, res) {
   res.sendFile(path.join(__dirname, "public", "react-quotation", "index.html"));
 });
+app.use(favicon(__dirname + '/public/react-quotation/favicon.ico'));
 
 // Plug routers
 app.use('/', indexRouter);
