@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, "public", "react-quotation")));
 app.get("/react-quotation/*", function (req, res) {
   res.sendFile(path.join(__dirname, "public", "react-quotation", "index.html"));
 });
-app.use(favicon(__dirname + '/public/react-quotation/favicon.ico'));
+//app.use(favicon(__dirname + '/public/react-quotation/favicon.ico'));
 
 // Plug routers
 app.use('/', indexRouter);
