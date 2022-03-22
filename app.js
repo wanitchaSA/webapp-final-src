@@ -17,7 +17,7 @@ var customerRouter = require('./routes/customers');
 var app = express();
 
 app.use(cors());
-app.use(favicon(__dirname + '/public/react-quotation/favicon.ico'));
+app.use(favicon(__dirname + '/public/react-quotation/logo512.png'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
