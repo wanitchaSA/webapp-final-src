@@ -1,5 +1,6 @@
 # MY (6213365) COMPANY APPLICATION
-https://company-6213365.herokuapp.com/
+https://company-6213365.herokuapp.com/ <br />
+Full-Stack Source Code Link: https://github.com/wanitchaSA/webapp-final-sourcecode-only
 
 ## FINAL (TAKE-HOME) EXAMINATION
 ----------------------------------------------------
@@ -18,11 +19,13 @@ My ID: 6213365
 ----------------------------------------------------
 
 ## PROJECT DESCRIPTION
+
 There are 4 Navigation Items:
 - Home
 - Quotation Building
 - Quotation Management
 - Product Management
+<br/> *Note: Unfortunately, the App link cannot directly navigate to the Log-in page, but each page is under subdirectory /react-quotation.
 
 Page 1: Home <br />
 Users can: 
@@ -42,6 +45,7 @@ Users can:
 - Delete a selected individual quotation from the database 
 - Add new quotation to the database (The system will navigate to the Quotation Building page)
 - See the total amount sold calculated from the sum of all quotations' total amount 
+<br /> *Note: Delete a single quotation may require refreshing the Web page.
 
 Page 4: Product Management <br />
 Users can:
