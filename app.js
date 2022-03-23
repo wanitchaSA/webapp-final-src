@@ -13,10 +13,12 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productsRouter = require('./routes/products');
 var customerRouter = require('./routes/customers');
+var quotationsRouter = require('./routes/quotations');
 
 var app = express();
 
 app.use(cors());
+//app.use(favicon(__dirname + '/public/react-quotation/favicon.ico'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,13 +34,13 @@ app.use(express.static(path.join(__dirname, "public", "react-quotation")));
 app.get("/react-quotation/*", function (req, res) {
   res.sendFile(path.join(__dirname, "public", "react-quotation", "index.html"));
 });
-//app.use(favicon(__dirname + '/public/react-quotation/favicon.ico'));
 
 // Plug routers
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/customers',customerRouter);
+app.use('/quotations',quotationsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
