@@ -24,10 +24,10 @@ There are 4 Navigation Items:
 - Quotation Management
 - Product Management
 
-<br />
 Page 1: Home <br />
 Users can: 
-- Log In to the system by providing username and password
+- Log In to the system 
+- (by providing username and password)
 
 Page 2: Quotation Building <br />
 Users can:
